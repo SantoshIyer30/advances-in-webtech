@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- <script type="text/javascript" src = "index.js"></script> -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        text-align: center;
+      }
+    </style>
+
+    <script type="text/javascript">
+      function validateForm() {
+        // window.alert("function")
+        u = "Santosh";
+        p = "abc123";
+        var x = document.forms["frm1"]["name"].value;
+        var y = document.forms["frm1"]["password"].value;
+        if (x == "") {
+          document.getElementById("nm").innerHTML = "Name must be filled out";
+          //window.alert("function")
+          return false;
+        }
+        if (y == "") {
+          document.getElementById("pw").innerHTML =
+            "Password must be filled out";
+          return false;
+        }
+        if (x == u) {
+          if (y == p) {
+            document.write("Login Successful");
+          } else {
+            document.write("Please Try again");
+          }
+        } else {
+          document.write("Invalid username");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1>JavaScript Validation</h1>
+    <form name="frm1" action="" onsubmit="return validateForm()" method="post">
+      Name :
+      <input type="text" name="name" />
+      <p id="nm"></p>
+      <br />
+      Password :
+      <input type="password" name="password" />
+      <p id="pw"></p>
+      <br />
+      <input type="submit" />
+    </form>
+  </body>
+</html>

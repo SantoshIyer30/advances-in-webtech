@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <link rel="stylesheet" href="styles.css">
+
+	</head>
+	<body>
+		<forms>
+		<fieldset>
+		<legend>Personal Information:</legend>
+			<div class="left" > First Name*:</div>
+			<input type = "text" id="fname" class="txt" value = "Your First Name" required><br>
+			<div class="left" >Last Name*:</div>
+			<input type = "text" id="lname". class="txt" required><br>
+			<div class="left">Gender: </div>
+			<input type="radio" id="Male" name="MFO" >
+  			<label for="M"> Male</label><br>
+  			<input type="radio" id="Female" name="MFO" >
+  			<label for="F"> Female</label><br>
+  			<input type="radio" id="Others" name="MFO" >
+  			<label for="O">others</label><br>
+
+			<div class="left">Date of Birth*:</div>
+			<input type = "date" id="dob"  class="txt" required><br>
+			<div class="left">Age(between 18 and 22)*:</div>
+			<input type = "number" id="age" class="txt" required><br>
+			<div class="left">Email*:</div>
+			<input type = "email" id="enail" class="txt" required><br>
+			<div class="left">Personal Phone Number*:</div>
+			<input type = "tel" id="phone" class="txt" pattern="[0-9]{10}" required><br>
+			<div class="left">Linkedin Profile*:</div>
+			<input type = "url" id="profile" class="txt" required><br>
+			<div class="left">Your Favourite Colour*:</div>
+			<input type = "color" id="fcolor" class="txt" required><br>
+			</fieldset>
+
+		<fieldset>
+		<legend>Educational Qualifications:</legend>
+			<input type="checkbox" id="B" name="Btech" >
+  			<label for="B"> Btech</label>
+			<select name="Stream" id="SB">
+  				<option value="CSE">CSE</option>
+  				<option value="ECE">ECE</option>
+  				<option value="Mech">Mech</option>
+  				<option value="BioTech">BioTech</option>
+			</select><br>
+  			<input type="checkbox" id="M" name="Mtech" >
+  			<label for="M"> Mtech</label>
+			<select name="Stream" id="SM">
+  				<option value="CSE">CSE</option>
+  				<option value="ECE">ECE</option>
+  				<option value="Mech">Mech</option>
+  				<option value="BioTech">BioTech</option>
+			</select><br>
+			<div class="left">Area of Interest*:</div>
+			<input type = "text" id="aoi"  class="txt" required><br>
+		</fieldset>
+
+
+		<fieldset>
+		<legend>Job Details:</legend>
+
+			<div class="left">Years Of Expirience*:</div>
+			<input type = "range" id="years" class="txt" required><br>
+			<div class="left">Job Title*:</div>
+			<input type = "text" id="jtitle" class="txt"  required><br>
+			<textarea id="job">Job Description</textarea><br>
+		</fieldset>
+			<br>
+			<div class="left">Upload your passport size photo*:</div>
+			<input type = "file" class="file" id="pick" required><br>
+			<div class="left">Upload your Aadhar*:</div>
+			<input type = "file" class="file" id="aadhar" required><br><br>
+		<div class="buttons">
+			<input type="submit" class="b" id="dvalidate" value = "Dont Validate"><br>
+			<input type="submit" class="g" id="validate" value = "Submit using Javascript Validate"><br>
+			<input type="submit" class="b" id="" value = "Submit using PHP Validate"><br>
+			<input type="reset" class="g" id="reset" value = "Form reset">
+		</div>
+		</forms>
+	</body>
+	<script src="index.js"></script>
+</html>
